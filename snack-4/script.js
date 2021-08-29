@@ -6,14 +6,17 @@ var c = numeri.length;
 
 
 var sommaDispari = 0;
+var sommaPari = 0;
 for ( i = 0; i < c; i++) {
 
     if( i % 2 > 0){
         sommaDispari += numeri[i];
-    }
+    } else 
+        sommaPari += numeri[i];
 }
 
 console.log('SOMMA DISPARI' + ' ' + sommaDispari);
+console.log('SOMMA PARI' + ' ' + sommaPari);
 
 
 
