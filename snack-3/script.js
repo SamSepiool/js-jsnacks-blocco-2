@@ -6,8 +6,8 @@ var cognomi = ['draghi', 'rossi', 'verdi']
 var whiteList = [];
 
 for ( var i = 0; i < 3; i++)  {
-    var invitatoFake = nomi[Math.floor(Math.random() * 3)] + " " + cognomi[Math.floor(Math.random() * 3)];
-    whiteList.push(invitatoFake);
+    whiteList.push(nomi[Math.floor(Math.random() * nomi.length )] + " " + cognomi[Math.floor(Math.random() * cognomi.length)]);
+    
 } 
 
-console.log(whiteList);
+console.log(whiteList); 
