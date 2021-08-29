@@ -2,6 +2,10 @@
 var somma = 0;
 for (var i = 0; i < 5; i++) {
     var nuovoNumero = parseInt( prompt('inserisci un numero') );
+
+    while( isNaN(nuovoNumero) ){
+        nuovoNumero = parseInt( prompt('questo non sembra un numero, riprova') )
+    }
     somma += nuovoNumero;
 }
 // l programma stampa la somma di tutti i numeri inseriti.
